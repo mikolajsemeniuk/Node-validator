@@ -1,0 +1,395 @@
+{
+    "claimID": "OIC-41062",
+    "medical": [
+        {
+            "medicalID": "MED-29207"
+        }
+    ],
+    "challengeLiability": [],
+    "interimPayment": [],
+    "medicalCaseKey": "MED-29207",
+    "claimSubmittedDate": "2021-06-18",
+    "proUserOrgName": "TestProuser536@WHL",
+    "proUserBaseOffice": "OICL MK146XT ",
+    "proUserPhoneNumber": "07123456789 ",
+    "compensatorOrgName": "Testcompensator101@WHL",
+    "compensatorOrgAddress": "MIB ",
+    "cruReferenceNumber": "CDR567",
+    "claimStatus": "Pending-ReviewOffer",
+    "personalInformation": {
+        "yourReference": "CR345678",
+        "referredSource": "Regulated CMC",
+        "title": "Mr.",
+        "firstName": "Dan",
+        "lastName": "Locker",
+        "dateOfBirth": "1962-08-14",
+        "emailAddress": "jack@gmail.com",
+        "phoneNumber": "0987654321",
+        "clientInvolvementInAccident": "The driver",
+        "askCuePI": "12345",
+        "address": {
+            "addressLineOne": "Caledonian Hotel",
+            "addressLineTwo": "4 Lothian Road",
+            "city": "EDINBURGH",
+            "county": "Midlothian",
+            "country": "GBR",
+            "homePostcode": "EH12AB"
+        },
+        "nino": {
+            "employmentStatus": "Employed",
+            "hasNInumber": true,
+            "nationalInsuranceNumber": "AB123456C",
+            "employmentDescription": "Architect"
+        },
+        "identityVerification": {
+            "performed": false,
+            "passed": "Not Applicable"
+        },
+        "vehicleInformation": {
+            "isRegKnown": true,
+            "vrm": "U210ABB",
+            "correctVehicle": true
+        }
+    },
+    "signatoryDetailsProuser": {
+        "firstName": "Winston",
+        "lastName": "Churchill",
+        "jobTitle": "Solicitor CR",
+        "dateOfSignature": "2021-06-18"
+    },
+    "signatoryDetailsCompensator": {
+        "firstName": "Jack",
+        "lastName": "Jose",
+        "jobTitle": "Claim Handler",
+        "dateOfSignature": "2021-06-18"
+    },
+    "accident": {
+        "accidentDate": "2021-01-01",
+        "accidentTime": "10:00:00",
+        "accidentDescription": "My client was hit by the other party near junction due to hos overspeed.",
+        "accidentType": "Hit in the rear",
+        "hasPoliceAttended": true,
+        "isDashcamEvidence": false,
+        "otherVehiclesInvolved": true,
+        "latitudeLongitude": "55.9496225, -3.2073123",
+        "locationDescription": "Around the Rex plaza",
+        "numberOfPassengers": "2",
+        "wasReported": false,
+        "isOwnerOfVehicle": true,
+        "wasWearingSeatbelt": "Yes",
+        "wereWitnesses": true,
+        "locationAddress": {
+            "addressLineOne": "EH1 2AB"
+        },
+        "policeDetails": {
+            "policeReferenceNumber": "CRN6907124",
+            "policeStationAddress": {
+                "addressLineOne": "Metro Police Head Office"
+            },
+            "reportingOfficer": {
+                "fullName": "Walter Chill"
+            }
+        },
+        "ifPassenger": {},
+        "ifNotOwner": {}
+    },
+    "witness": [
+        {
+            "fullName": "Sarah Clubley",
+            "phoneNumber": "07654234590",
+            "emailAddress": "Sarah@yahoo.com",
+            "wasWitnessKnownPriorToAccident": false,
+            "address": {
+                "addressLineOne": "Flat 3",
+                "addressLineTwo": "16 Union Street",
+                "city": "EDINBURGH",
+                "county": "Midlothian",
+                "country": "GBR",
+                "postcode": "EH13AB"
+            }
+        }
+    ],
+    "medicalInformation": {
+        "injury": {
+            "hospitalStayNightRange": "More than 3 nights",
+            "hospitalName": "VHS Royal Health Center",
+            "injury": [
+                {
+                    "injuryType": "Neck Fracture",
+                    "injurySustained": "Severe Neck Injury",
+                    "isWhiplash": false,
+                    "isFracture": true
+                }
+            ],
+            "medicalAttentionSought": true,
+            "wasHospitalAttended": true,
+            "timeOffTaken": true,
+            "timeOffDaysTotal": "4",
+            "hadOtherClinicalAttendance": false,
+            "furtherTreatmentRecommended": true,
+            "isGPAttended": true
+        },
+        "medicalExamination": {
+            "dateOfMedicalExamReportUpload": "2021-06-18T13:05:03.172Z",
+            "medicalExamDate": "2021-02-12",
+            "prognosisPeriod": "2021-06-18",
+            "prognosisRecoveredJustification": "add details comments",
+            "nextAction": "Proceed",
+            "medCoSearchReference": "1/1",
+            "medicalReportSignatoryDetails": {
+                "firstName": "Chris",
+                "lastName": "Bishop",
+                "jobTitle": "Solicitor CR"
+            }
+        },
+        "medicalProvider": {}
+    },
+    "defendant": {
+        "firstName": "Patrick",
+        "lastName": "Graham",
+        "emailAddress": "patrick@gmail.com",
+        "phoneNumber": "272535996",
+        "age": "35",
+        "gender": "Male",
+        "defendantDescription": "He has got good driving records with no convictions.",
+        "involvementDetail": "Other party was over speed.",
+        "detailsObtainedFrom": "Details received from the CCV footage around the plaza",
+        "address": {
+            "addressLineOne": "28 Church End Road",
+            "addressLineTwo": "Shenley Brook End",
+            "addressLineThree": "MILTON KEYNES",
+            "city": "Buckinghamshire",
+            "county": "United Kingdom",
+            "country": "United Kingdom",
+            "homePostcode": "MK57AB"
+        },
+        "vehicle": {
+            "vrm": "U210ACC",
+            "correctVehicle": true
+        }
+    },
+    "otherVehicles": {
+        "otherVehicleDetails": [
+            {
+                "regNumber": "A2",
+                "driverName": "Greg Chapell",
+                "phoneNumber": "05643567812"
+            }
+        ]
+    },
+    "claimDetails": {
+        "insurerPolicyNumber": "WHIPPOLM211",
+        "insurerId": "529",
+        "isCompensatorMIB": false,
+        "liability": {
+            "liabilityDecision": "Liability admitted in full",
+            "liabilityJustification": "Test",
+            "capacity": "Other",
+            "wearingSeatBelt": "Yes",
+            "wantToArgue": false,
+            "defendantVersionOfEventsProvidedToMedicalExpert": false,
+            "defendantVersionOfEvents": false,
+            "uploadedDefendantVersionOfEvents": false,
+            "liabilityPercentage": "100",
+            "courtDecisionOnLiability": "Liability agreed in full against the defendant",
+            "liabilitySignatoryDetails": {
+                "firstName": "Chris",
+                "middleName": "Ben",
+                "lastName": "Bishop",
+                "jobTitle": "Handler"
+            },
+            "liabilityHistory": [
+                {
+                    "compensatorComment": "Test",
+                    "actionedOn": "2021-06-18T12:41:48.795Z",
+                    "actionedBy": "0oa3mrbdnx5iricTT0i7"
+                }
+            ]
+        }
+    },
+    "losses": {
+        "vehicleRepairWanted": false,
+        "noRepairReason": "Car has already been repaired",
+        "claimOtherLosses": true,
+        "totalLossAmount": "2700.0",
+        "totalOfferAmount": "2340.0",
+        "offerCount": "1",
+        "claimantLosses": "2700.0",
+        "lossesBeforeLiabilityDeduction": "2340.0",
+        "liabilityDeductions": "0.0",
+        "offerNetOfLiabilityBeforeOtherDeductions": "2340.0",
+        "otherDeductions": "0.0",
+        "netOffer": "2340.0",
+        "roundupOffer": false,
+        "offerBasedOnMedical": true,
+        "concludeWhiplashInjury": true,
+        "otherLosses": [
+            {
+                "category": "Property - repairs / total loss",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Property - storage / recovery",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Property - temporary vehicle",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Property - loss of use",
+                "claimAmount": "1200.0",
+                "offerAmount": "1000",
+                "compensatorComments": "dfdfdf",
+                "claimItems": [
+                    {
+                        "claimItemValue": "1200.0",
+                        "description": "Property loss due to accident",
+                        "evidenceToUpload": "No evidence available",
+                        "isOngoingLoss": false,
+                        "lossId": "Y6WZ4QAA1624020078619"
+                    }
+                ]
+            },
+            {
+                "category": "Property - travel expenses",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Property - excess",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Property - diminution",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Property - other items",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Injury related - treatment costs",
+                "claimAmount": "1500.0",
+                "offerAmount": "1000",
+                "compensatorComments": "sdsdsd",
+                "claimItems": [
+                    {
+                        "claimItemValue": "1500.0",
+                        "description": "Injury treatment costs",
+                        "evidenceToUpload": "No evidence available",
+                        "isOngoingLoss": false,
+                        "lossId": "Y6WZ4QAA1624020078622"
+                    }
+                ]
+            },
+            {
+                "category": "Injury related - prescription costs",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Injury related - loss of earnings",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Injury related - care costs",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Injury related - travel costs",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Injury related - other costs",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Tariff amount",
+                "claimAmount": "0",
+                "offerAmount": "240",
+                "whichTariffComp": "Whiplash",
+                "injuryDuration": "Not more than 3 months"
+            },
+            {
+                "category": "Tariff uplift",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Injury - non-tariff",
+                "claimAmount": "0",
+                "offerAmount": "100",
+                "compensatorComments": "sdfsfsf"
+            },
+            {
+                "category": "Fees - medical report",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Fees - other expert's fee",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Fees - police report",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Fees - medical records",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Fees - court fee",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Fees - fixed legal representative costs",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Deduction for liability",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Deduction for seatbelt",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Deduction for interim",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Deduction for CRU",
+                "claimAmount": "0"
+            },
+            {
+                "claimAmount": "0"
+            },
+            {
+                "claimAmount": "0"
+            },
+            {
+                "claimAmount": "0"
+            },
+            {
+                "claimAmount": "0"
+            },
+            {
+                "category": "Claim - Offer (other protocol damages)",
+                "claimAmount": "0"
+            },
+            {
+                "category": "Fees - Offer",
+                "claimAmount": "0"
+            }
+        ]
+    },
+    "fees": {
+        "feeProposalAmount": "0.0"
+    },
+    "disputedFees": [],
+    "nvcCapture": {},
+    "claimantDetails": {},
+    "defendantLegalDetails": {},
+    "sla": {
+        "deadlineForLiability": "2021-06-18",
+        "deadlineForFirstOffer": "2021-06-18T13:35:47.141Z"
+    }
+}

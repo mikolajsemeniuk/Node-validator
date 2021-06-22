@@ -1,0 +1,1527 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "claimID": {
+            "type": "string"
+        },
+        "medical": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "medicalID": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "medicalID"
+                    ]
+                }
+            ]
+        },
+        "challengeLiability": {
+            "type": "array",
+            "items": {}
+        },
+        "interimPayment": {
+            "type": "array",
+            "items": {}
+        },
+        "medicalCaseKey": {
+            "type": "string"
+        },
+        "claimSubmittedDate": {
+            "type": "string"
+        },
+        "proUserOrgName": {
+            "type": "string"
+        },
+        "proUserBaseOffice": {
+            "type": "string"
+        },
+        "proUserPhoneNumber": {
+            "type": "string"
+        },
+        "compensatorOrgName": {
+            "type": "string"
+        },
+        "compensatorOrgAddress": {
+            "type": "string"
+        },
+        "cruReferenceNumber": {
+            "type": "string"
+        },
+        "claimStatus": {
+            "type": "string"
+        },
+        "personalInformation": {
+            "type": "object",
+            "properties": {
+                "yourReference": {
+                    "type": "string"
+                },
+                "referredSource": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "dateOfBirth": {
+                    "type": "string"
+                },
+                "emailAddress": {
+                    "type": "string"
+                },
+                "phoneNumber": {
+                    "type": "string"
+                },
+                "clientInvolvementInAccident": {
+                    "type": "string"
+                },
+                "askCuePI": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "object",
+                    "properties": {
+                        "addressLineOne": {
+                            "type": "string"
+                        },
+                        "addressLineTwo": {
+                            "type": "string"
+                        },
+                        "city": {
+                            "type": "string"
+                        },
+                        "county": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "homePostcode": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "addressLineOne",
+                        "addressLineTwo",
+                        "city",
+                        "county",
+                        "country",
+                        "homePostcode"
+                    ]
+                },
+                "nino": {
+                    "type": "object",
+                    "properties": {
+                        "employmentStatus": {
+                            "type": "string"
+                        },
+                        "hasNInumber": {
+                            "type": "boolean"
+                        },
+                        "nationalInsuranceNumber": {
+                            "type": "string"
+                        },
+                        "employmentDescription": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "employmentStatus",
+                        "hasNInumber",
+                        "nationalInsuranceNumber",
+                        "employmentDescription"
+                    ]
+                },
+                "identityVerification": {
+                    "type": "object",
+                    "properties": {
+                        "performed": {
+                            "type": "boolean"
+                        },
+                        "passed": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "performed",
+                        "passed"
+                    ]
+                },
+                "vehicleInformation": {
+                    "type": "object",
+                    "properties": {
+                        "isRegKnown": {
+                            "type": "boolean"
+                        },
+                        "vrm": {
+                            "type": "string"
+                        },
+                        "correctVehicle": {
+                            "type": "boolean"
+                        }
+                    },
+                    "required": [
+                        "isRegKnown",
+                        "vrm",
+                        "correctVehicle"
+                    ]
+                }
+            },
+            "required": [
+                "yourReference",
+                "referredSource",
+                "title",
+                "firstName",
+                "lastName",
+                "dateOfBirth",
+                "emailAddress",
+                "phoneNumber",
+                "clientInvolvementInAccident",
+                "askCuePI",
+                "address",
+                "nino",
+                "identityVerification",
+                "vehicleInformation"
+            ]
+        },
+        "signatoryDetailsProuser": {
+            "type": "object",
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "jobTitle": {
+                    "type": "string"
+                },
+                "dateOfSignature": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "firstName",
+                "lastName",
+                "jobTitle",
+                "dateOfSignature"
+            ]
+        },
+        "signatoryDetailsCompensator": {
+            "type": "object",
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "jobTitle": {
+                    "type": "string"
+                },
+                "dateOfSignature": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "firstName",
+                "lastName",
+                "jobTitle",
+                "dateOfSignature"
+            ]
+        },
+        "accident": {
+            "type": "object",
+            "properties": {
+                "accidentDate": {
+                    "type": "string"
+                },
+                "accidentTime": {
+                    "type": "string"
+                },
+                "accidentDescription": {
+                    "type": "string"
+                },
+                "accidentType": {
+                    "type": "string"
+                },
+                "hasPoliceAttended": {
+                    "type": "boolean"
+                },
+                "isDashcamEvidence": {
+                    "type": "boolean"
+                },
+                "otherVehiclesInvolved": {
+                    "type": "boolean"
+                },
+                "latitudeLongitude": {
+                    "type": "string"
+                },
+                "locationDescription": {
+                    "type": "string"
+                },
+                "numberOfPassengers": {
+                    "type": "string"
+                },
+                "wasReported": {
+                    "type": "boolean"
+                },
+                "isOwnerOfVehicle": {
+                    "type": "boolean"
+                },
+                "wasWearingSeatbelt": {
+                    "type": "string"
+                },
+                "wereWitnesses": {
+                    "type": "boolean"
+                },
+                "locationAddress": {
+                    "type": "object",
+                    "properties": {
+                        "addressLineOne": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "addressLineOne"
+                    ]
+                },
+                "policeDetails": {
+                    "type": "object",
+                    "properties": {
+                        "policeReferenceNumber": {
+                            "type": "string"
+                        },
+                        "policeStationAddress": {
+                            "type": "object",
+                            "properties": {
+                                "addressLineOne": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "addressLineOne"
+                            ]
+                        },
+                        "reportingOfficer": {
+                            "type": "object",
+                            "properties": {
+                                "fullName": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "fullName"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "policeReferenceNumber",
+                        "policeStationAddress",
+                        "reportingOfficer"
+                    ]
+                },
+                "ifPassenger": {
+                    "type": "object"
+                },
+                "ifNotOwner": {
+                    "type": "object"
+                }
+            },
+            "required": [
+                "accidentDate",
+                "accidentTime",
+                "accidentDescription",
+                "accidentType",
+                "hasPoliceAttended",
+                "isDashcamEvidence",
+                "otherVehiclesInvolved",
+                "latitudeLongitude",
+                "locationDescription",
+                "numberOfPassengers",
+                "wasReported",
+                "isOwnerOfVehicle",
+                "wasWearingSeatbelt",
+                "wereWitnesses",
+                "locationAddress",
+                "policeDetails",
+                "ifPassenger",
+                "ifNotOwner"
+            ]
+        },
+        "witness": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "fullName": {
+                            "type": "string"
+                        },
+                        "phoneNumber": {
+                            "type": "string"
+                        },
+                        "emailAddress": {
+                            "type": "string"
+                        },
+                        "wasWitnessKnownPriorToAccident": {
+                            "type": "boolean"
+                        },
+                        "address": {
+                            "type": "object",
+                            "properties": {
+                                "addressLineOne": {
+                                    "type": "string"
+                                },
+                                "addressLineTwo": {
+                                    "type": "string"
+                                },
+                                "city": {
+                                    "type": "string"
+                                },
+                                "county": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                },
+                                "postcode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "addressLineOne",
+                                "addressLineTwo",
+                                "city",
+                                "county",
+                                "country",
+                                "postcode"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "fullName",
+                        "phoneNumber",
+                        "emailAddress",
+                        "wasWitnessKnownPriorToAccident",
+                        "address"
+                    ]
+                }
+            ]
+        },
+        "medicalInformation": {
+            "type": "object",
+            "properties": {
+                "injury": {
+                    "type": "object",
+                    "properties": {
+                        "hospitalStayNightRange": {
+                            "type": "string"
+                        },
+                        "hospitalName": {
+                            "type": "string"
+                        },
+                        "injury": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "injuryType": {
+                                            "type": "string"
+                                        },
+                                        "injurySustained": {
+                                            "type": "string"
+                                        },
+                                        "isWhiplash": {
+                                            "type": "boolean"
+                                        },
+                                        "isFracture": {
+                                            "type": "boolean"
+                                        }
+                                    },
+                                    "required": [
+                                        "injuryType",
+                                        "injurySustained",
+                                        "isWhiplash",
+                                        "isFracture"
+                                    ]
+                                }
+                            ]
+                        },
+                        "medicalAttentionSought": {
+                            "type": "boolean"
+                        },
+                        "wasHospitalAttended": {
+                            "type": "boolean"
+                        },
+                        "timeOffTaken": {
+                            "type": "boolean"
+                        },
+                        "timeOffDaysTotal": {
+                            "type": "string"
+                        },
+                        "hadOtherClinicalAttendance": {
+                            "type": "boolean"
+                        },
+                        "furtherTreatmentRecommended": {
+                            "type": "boolean"
+                        },
+                        "isGPAttended": {
+                            "type": "boolean"
+                        }
+                    },
+                    "required": [
+                        "hospitalStayNightRange",
+                        "hospitalName",
+                        "injury",
+                        "medicalAttentionSought",
+                        "wasHospitalAttended",
+                        "timeOffTaken",
+                        "timeOffDaysTotal",
+                        "hadOtherClinicalAttendance",
+                        "furtherTreatmentRecommended",
+                        "isGPAttended"
+                    ]
+                },
+                "medicalExamination": {
+                    "type": "object",
+                    "properties": {
+                        "dateOfMedicalExamReportUpload": {
+                            "type": "string"
+                        },
+                        "medicalExamDate": {
+                            "type": "string"
+                        },
+                        "prognosisPeriod": {
+                            "type": "string"
+                        },
+                        "prognosisRecoveredJustification": {
+                            "type": "string"
+                        },
+                        "nextAction": {
+                            "type": "string"
+                        },
+                        "medCoSearchReference": {
+                            "type": "string"
+                        },
+                        "medicalReportSignatoryDetails": {
+                            "type": "object",
+                            "properties": {
+                                "firstName": {
+                                    "type": "string"
+                                },
+                                "lastName": {
+                                    "type": "string"
+                                },
+                                "jobTitle": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "firstName",
+                                "lastName",
+                                "jobTitle"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "dateOfMedicalExamReportUpload",
+                        "medicalExamDate",
+                        "prognosisPeriod",
+                        "prognosisRecoveredJustification",
+                        "nextAction",
+                        "medCoSearchReference",
+                        "medicalReportSignatoryDetails"
+                    ]
+                },
+                "medicalProvider": {
+                    "type": "object"
+                }
+            },
+            "required": [
+                "injury",
+                "medicalExamination",
+                "medicalProvider"
+            ]
+        },
+        "defendant": {
+            "type": "object",
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "emailAddress": {
+                    "type": "string"
+                },
+                "phoneNumber": {
+                    "type": "string"
+                },
+                "age": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "defendantDescription": {
+                    "type": "string"
+                },
+                "involvementDetail": {
+                    "type": "string"
+                },
+                "detailsObtainedFrom": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "object",
+                    "properties": {
+                        "addressLineOne": {
+                            "type": "string"
+                        },
+                        "addressLineTwo": {
+                            "type": "string"
+                        },
+                        "addressLineThree": {
+                            "type": "string"
+                        },
+                        "city": {
+                            "type": "string"
+                        },
+                        "county": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "homePostcode": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "addressLineOne",
+                        "addressLineTwo",
+                        "addressLineThree",
+                        "city",
+                        "county",
+                        "country",
+                        "homePostcode"
+                    ]
+                },
+                "vehicle": {
+                    "type": "object",
+                    "properties": {
+                        "vrm": {
+                            "type": "string"
+                        },
+                        "correctVehicle": {
+                            "type": "boolean"
+                        }
+                    },
+                    "required": [
+                        "vrm",
+                        "correctVehicle"
+                    ]
+                }
+            },
+            "required": [
+                "firstName",
+                "lastName",
+                "emailAddress",
+                "phoneNumber",
+                "age",
+                "gender",
+                "defendantDescription",
+                "involvementDetail",
+                "detailsObtainedFrom",
+                "address",
+                "vehicle"
+            ]
+        },
+        "otherVehicles": {
+            "type": "object",
+            "properties": {
+                "otherVehicleDetails": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "regNumber": {
+                                    "type": "string"
+                                },
+                                "driverName": {
+                                    "type": "string"
+                                },
+                                "phoneNumber": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "regNumber",
+                                "driverName",
+                                "phoneNumber"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "otherVehicleDetails"
+            ]
+        },
+        "claimDetails": {
+            "type": "object",
+            "properties": {
+                "insurerPolicyNumber": {
+                    "type": "string"
+                },
+                "insurerId": {
+                    "type": "string"
+                },
+                "isCompensatorMIB": {
+                    "type": "boolean"
+                },
+                "liability": {
+                    "type": "object",
+                    "properties": {
+                        "liabilityDecision": {
+                            "type": "string"
+                        },
+                        "liabilityJustification": {
+                            "type": "string"
+                        },
+                        "capacity": {
+                            "type": "string"
+                        },
+                        "wearingSeatBelt": {
+                            "type": "string"
+                        },
+                        "wantToArgue": {
+                            "type": "boolean"
+                        },
+                        "defendantVersionOfEventsProvidedToMedicalExpert": {
+                            "type": "boolean"
+                        },
+                        "defendantVersionOfEvents": {
+                            "type": "boolean"
+                        },
+                        "uploadedDefendantVersionOfEvents": {
+                            "type": "boolean"
+                        },
+                        "liabilityPercentage": {
+                            "type": "string"
+                        },
+                        "courtDecisionOnLiability": {
+                            "type": "string"
+                        },
+                        "liabilitySignatoryDetails": {
+                            "type": "object",
+                            "properties": {
+                                "firstName": {
+                                    "type": "string"
+                                },
+                                "middleName": {
+                                    "type": "string"
+                                },
+                                "lastName": {
+                                    "type": "string"
+                                },
+                                "jobTitle": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "firstName",
+                                "middleName",
+                                "lastName",
+                                "jobTitle"
+                            ]
+                        },
+                        "liabilityHistory": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "compensatorComment": {
+                                            "type": "string"
+                                        },
+                                        "actionedOn": {
+                                            "type": "string"
+                                        },
+                                        "actionedBy": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "compensatorComment",
+                                        "actionedOn",
+                                        "actionedBy"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "liabilityDecision",
+                        "liabilityJustification",
+                        "capacity",
+                        "wearingSeatBelt",
+                        "wantToArgue",
+                        "defendantVersionOfEventsProvidedToMedicalExpert",
+                        "defendantVersionOfEvents",
+                        "uploadedDefendantVersionOfEvents",
+                        "liabilityPercentage",
+                        "courtDecisionOnLiability",
+                        "liabilitySignatoryDetails",
+                        "liabilityHistory"
+                    ]
+                }
+            },
+            "required": [
+                "insurerPolicyNumber",
+                "insurerId",
+                "isCompensatorMIB",
+                "liability"
+            ]
+        },
+        "losses": {
+            "type": "object",
+            "properties": {
+                "vehicleRepairWanted": {
+                    "type": "boolean"
+                },
+                "noRepairReason": {
+                    "type": "string"
+                },
+                "claimOtherLosses": {
+                    "type": "boolean"
+                },
+                "totalLossAmount": {
+                    "type": "string"
+                },
+                "totalOfferAmount": {
+                    "type": "string"
+                },
+                "offerCount": {
+                    "type": "string"
+                },
+                "claimantLosses": {
+                    "type": "string"
+                },
+                "lossesBeforeLiabilityDeduction": {
+                    "type": "string"
+                },
+                "liabilityDeductions": {
+                    "type": "string"
+                },
+                "offerNetOfLiabilityBeforeOtherDeductions": {
+                    "type": "string"
+                },
+                "otherDeductions": {
+                    "type": "string"
+                },
+                "netOffer": {
+                    "type": "string"
+                },
+                "roundupOffer": {
+                    "type": "boolean"
+                },
+                "offerBasedOnMedical": {
+                    "type": "boolean"
+                },
+                "concludeWhiplashInjury": {
+                    "type": "boolean"
+                },
+                "otherLosses": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                },
+                                "offerAmount": {
+                                    "type": "string"
+                                },
+                                "compensatorComments": {
+                                    "type": "string"
+                                },
+                                "claimItems": {
+                                    "type": "array",
+                                    "items": [
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "claimItemValue": {
+                                                    "type": "string"
+                                                },
+                                                "description": {
+                                                    "type": "string"
+                                                },
+                                                "evidenceToUpload": {
+                                                    "type": "string"
+                                                },
+                                                "isOngoingLoss": {
+                                                    "type": "boolean"
+                                                },
+                                                "lossId": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "claimItemValue",
+                                                "description",
+                                                "evidenceToUpload",
+                                                "isOngoingLoss",
+                                                "lossId"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount",
+                                "offerAmount",
+                                "compensatorComments",
+                                "claimItems"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                },
+                                "offerAmount": {
+                                    "type": "string"
+                                },
+                                "compensatorComments": {
+                                    "type": "string"
+                                },
+                                "claimItems": {
+                                    "type": "array",
+                                    "items": [
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "claimItemValue": {
+                                                    "type": "string"
+                                                },
+                                                "description": {
+                                                    "type": "string"
+                                                },
+                                                "evidenceToUpload": {
+                                                    "type": "string"
+                                                },
+                                                "isOngoingLoss": {
+                                                    "type": "boolean"
+                                                },
+                                                "lossId": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "claimItemValue",
+                                                "description",
+                                                "evidenceToUpload",
+                                                "isOngoingLoss",
+                                                "lossId"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount",
+                                "offerAmount",
+                                "compensatorComments",
+                                "claimItems"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                },
+                                "offerAmount": {
+                                    "type": "string"
+                                },
+                                "whichTariffComp": {
+                                    "type": "string"
+                                },
+                                "injuryDuration": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount",
+                                "offerAmount",
+                                "whichTariffComp",
+                                "injuryDuration"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                },
+                                "offerAmount": {
+                                    "type": "string"
+                                },
+                                "compensatorComments": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount",
+                                "offerAmount",
+                                "compensatorComments"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string"
+                                },
+                                "claimAmount": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "claimAmount"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "vehicleRepairWanted",
+                "noRepairReason",
+                "claimOtherLosses",
+                "totalLossAmount",
+                "totalOfferAmount",
+                "offerCount",
+                "claimantLosses",
+                "lossesBeforeLiabilityDeduction",
+                "liabilityDeductions",
+                "offerNetOfLiabilityBeforeOtherDeductions",
+                "otherDeductions",
+                "netOffer",
+                "roundupOffer",
+                "offerBasedOnMedical",
+                "concludeWhiplashInjury",
+                "otherLosses"
+            ]
+        },
+        "fees": {
+            "type": "object",
+            "properties": {
+                "feeProposalAmount": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "feeProposalAmount"
+            ]
+        },
+        "disputedFees": {
+            "type": "array",
+            "items": {}
+        },
+        "nvcCapture": {
+            "type": "object"
+        },
+        "claimantDetails": {
+            "type": "object"
+        },
+        "defendantLegalDetails": {
+            "type": "object"
+        },
+        "sla": {
+            "type": "object",
+            "properties": {
+                "deadlineForLiability": {
+                    "type": "string"
+                },
+                "deadlineForFirstOffer": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "deadlineForLiability",
+                "deadlineForFirstOffer"
+            ]
+        }
+    },
+    "required": [
+        "claimID",
+        "medical",
+        "challengeLiability",
+        "interimPayment",
+        "medicalCaseKey",
+        "claimSubmittedDate",
+        "proUserOrgName",
+        "proUserBaseOffice",
+        "proUserPhoneNumber",
+        "compensatorOrgName",
+        "compensatorOrgAddress",
+        "cruReferenceNumber",
+        "claimStatus",
+        "personalInformation",
+        "signatoryDetailsProuser",
+        "signatoryDetailsCompensator",
+        "accident",
+        "witness",
+        "medicalInformation",
+        "defendant",
+        "otherVehicles",
+        "claimDetails",
+        "losses",
+        "fees",
+        "disputedFees",
+        "nvcCapture",
+        "claimantDetails",
+        "defendantLegalDetails",
+        "sla"
+    ]
+}
